@@ -3681,3 +3681,20 @@ button:disabled,
   height: auto;
 }
 
+/* Ensure the container for posts is unaffected */
+.posts {
+  position: relative;
+}
+
+/* Align the buttons in both articles */
+.posts article {
+  position: relative;
+  padding-bottom: 50px; /* Add space at the bottom to avoid overlap */
+}
+
+.posts .actions {
+  position: absolute;
+  bottom: 0; /* Position the button at the bottom of the article */
+  width: 100%; /* Ensure the button is centered within its container */
+  text-align: center;
+}
